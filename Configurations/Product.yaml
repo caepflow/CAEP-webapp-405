@@ -1,0 +1,48 @@
+id: 90bdd028-3732-43b5-b551-bf5a4112966e
+type: entity
+annotations:
+- namespace: c4modeler
+  name: position
+  value:
+    dbe0674f-c603-41c3-a57b-4a65bdfa92bb:
+      x: 137.5
+      y: 67.5
+entityType: domain
+name: Product
+fields:
+- type: string
+  description: New Field
+  isPublic: true
+  enumerable: true
+  name: name
+- type: ProductType
+  description: New Field
+  isPublic: true
+  enumerable: true
+  name: type
+- name: description
+  type: string
+  description: Description for description
+  isPublic: true
+  enumerable: true
+  annotations: []
+- name: suggestedPrice
+  type: float
+  description: Description for suggestedPrice
+  isPublic: true
+  enumerable: true
+  annotations: []
+- name: availableItems
+  type: integer
+  description: Description for availableItems
+  isPublic: true
+  enumerable: true
+  annotations: []
+description: Entity
+associations:
+- target:
+    entity: 5c812fb4-179b-414d-a730-3ef8319d7276
+    navigation: product
+    foreignKey: productId
+  type: associate
+  multiplicity: one-to-many

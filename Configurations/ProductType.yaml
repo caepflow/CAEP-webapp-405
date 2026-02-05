@@ -1,0 +1,22 @@
+id: 5380d222-8381-49eb-bef1-462c9fc8207d
+type: entity
+annotations:
+- namespace: c4modeler
+  name: position
+  value:
+    dbe0674f-c603-41c3-a57b-4a65bdfa92bb:
+      x: 512.5
+      y: 67.5
+entityType: enum
+name: ProductType
+enumeratorList:
+- name: Fish
+  description: Description for Fish
+  annotations: []
+- name: Meat
+  description: Description for Meat
+  annotations: []
+- name: Vegetables
+  description: Description for Vegetables
+  annotations: []
+description: Enum example
