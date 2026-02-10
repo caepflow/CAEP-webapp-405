@@ -1,0 +1,15 @@
+id: 83c06ec2-a2f4-4712-8e67-12afd60ab992
+type: datasource
+name: NewDatasource
+description: NewDatasource description
+mode: ReadWrite
+rootEntity: Invoice
+includeAllFields: false
+allowPersistence: false
+fields:
+  - name: invoiceDate
+  - name: totalAmount
+pageSize: 25
+sort:
+  - field: invoiceDate
+    direction: Ascending
