@@ -1,0 +1,14 @@
+id: acfb4c0d-9167-4885-b94a-624f1e55fb17
+type: datasource
+name: NewDatasource
+description: NewDatasource description
+mode: ReadWrite
+rootEntity: Invoice
+includeAllFields: false
+allowPersistence: false
+fields:
+  - name: description
+pageSize: 25
+sort:
+  - field: description
+    direction: Ascending
