@@ -24,4 +24,4 @@ sort:
   - field: Id
     direction: Ascending
   - field: invoiceRows.product.type
-    direction: Ascending
+    direction: Descending
