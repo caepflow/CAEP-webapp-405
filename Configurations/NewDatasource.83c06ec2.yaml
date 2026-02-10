@@ -9,7 +9,20 @@ allowPersistence: false
 fields:
   - name: invoiceDate
   - name: totalAmount
+  - name: invoiceRows
+    includeAllFields: true
+    allowPersistence: false
+    fields:
+      - name: product
+        includeAllFields: false
+        allowPersistence: false
+        fields:
+          - name: name
 pageSize: 25
 sort:
   - field: invoiceDate
+    direction: Ascending
+  - field: totalAmount
+    direction: Ascending
+  - field: invoiceRows.product.name
     direction: Ascending
