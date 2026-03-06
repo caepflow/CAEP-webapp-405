@@ -1,28 +1,44 @@
 id: 83c06ec2-a2f4-4712-8e67-12afd60ab992
 type: datasource
-name: NewDatasource
-description: NewDatasource description
+name: MegaDatasource
+description: MegaDatasource description
 mode: ReadWrite
 rootEntity: Invoice
 includeAllFields: false
-allowPersistence: false
+allowPersistence: true
 fields:
   - name: invoiceDate
   - name: totalAmount
   - name: invoiceRows
     includeAllFields: true
-    allowPersistence: false
+    allowPersistence: true
     fields:
       - name: product
         includeAllFields: false
-        allowPersistence: false
+        allowPersistence: true
         fields:
-          - name: name
-pageSize: 25
+          - name: Id
+          - name: type
+          - name: description
+          - name: suggestedPrice
+          - name: availableItems
+pageSize: 104
 sort:
+  - field: invoiceRows.product.suggestedPrice
+    direction: Descending
+  - field: invoiceRows.quantity
+    direction: Ascending
   - field: invoiceDate
+    direction: Ascending
+  - field: invoiceRows.productId
     direction: Ascending
   - field: totalAmount
     direction: Ascending
+  - field: invoiceRows.Id
+    direction: Ascending
   - field: invoiceRows.product.name
     direction: Ascending
+  - field: invoiceRows.product.availableItems
+    direction: Ascending
+  - field: invoiceRows.product.description
+    direction: Descending

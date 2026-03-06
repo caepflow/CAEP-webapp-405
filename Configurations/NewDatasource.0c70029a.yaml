@@ -1,0 +1,26 @@
+id: 0c70029a-0404-47da-b1e9-f22a37ebb837
+type: datasource
+name: NewDatasourcea
+description: NewDatasource descriptiona
+mode: ReadOnly
+rootEntity: Invoice
+includeAllFields: true
+allowPersistence: false
+fields:
+  - name: invoiceRows
+    includeAllFields: false
+    allowPersistence: true
+    fields:
+      - name: quantity
+      - name: product
+        includeAllFields: false
+        allowPersistence: true
+        fields:
+          - name: type
+      - name: productId
+pageSize: 23
+sort:
+  - field: description
+    direction: Ascending
+  - field: Id
+    direction: Descending

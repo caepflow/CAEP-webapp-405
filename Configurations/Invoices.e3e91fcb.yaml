@@ -1,0 +1,28 @@
+id: e3e91fcb-d871-4deb-b064-89c9486311c6
+type: datasource
+name: Invoices
+description: NewDatasource description
+mode: ReadOnly
+rootEntity: Invoice
+includeAllFields: false
+allowPersistence: true
+fields:
+  - name: invoiceRows
+    includeAllFields: false
+    allowPersistence: false
+    fields:
+      - name: product
+        includeAllFields: true
+        allowPersistence: false
+        fields: []
+      - name: productId
+      - name: quantity
+  - name: Id
+  - name: description
+  - name: invoiceDate
+pageSize: 20
+sort:
+  - field: invoiceDate
+    direction: Descending
+  - field: description
+    direction: Descending

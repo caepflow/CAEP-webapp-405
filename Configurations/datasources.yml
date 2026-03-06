@@ -18,3 +18,11 @@ children:
     type: Datasource
     name: NewDatasource
     description: NewDatasource description
+  - id: 0c70029a-0404-47da-b1e9-f22a37ebb837
+    type: Datasource
+    name: NewDatasource
+    description: NewDatasource description
+  - id: e3e91fcb-d871-4deb-b064-89c9486311c6
+    type: Datasource
+    name: Invoices
+    description: NewDatasource description
