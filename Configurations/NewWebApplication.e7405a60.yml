@@ -1,0 +1,34 @@
+id: 8f93533f-4926-4f01-ab7a-5f6991dbbbcd
+type: web-application
+interactions:
+- targetId: f3c52065-8b6f-4e61-bd3b-ea080b978d6d
+  type: gateway
+  level: container
+annotations:
+- namespace: c4modeler
+  name: position
+  value:
+    a3497826-bced-4033-9867-5fdabec09fe2:
+      x: 435.5896302250804
+      y: 124.2154379596281
+- namespace: c4modeler
+  name: boundary
+  value:
+    x: 140
+    y: 375.5
+    width: 280
+    height: 751
+prefix: app
+author: CodeArchitects
+target: angular@19
+architecture: single-page-application
+strict: false
+name: NewWebApplication
+description: Description for NewWebApplication
+children:
+- id: bdbfde1e-e5a8-445f-ad2c-29141c407011
+  type: application
+- id: 3cd3f56d-8483-42f5-80f7-5927a4d14476
+  type: domain
+- id: d9acf028-fc90-4076-a4d8-156725eb4b0e
+  type: scenario
